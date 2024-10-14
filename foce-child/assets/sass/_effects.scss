@@ -1,0 +1,84 @@
+// // Ouverture du menu en fade
+// @keyframes fadingMenu {
+// 	from {
+// 		opacity: 0;
+// 		transform: translate3d(0, -20%, 0);
+// 	}
+  
+// 	to {
+// 		opacity: 1;
+// 		transform: translate3d(0, 0, 0);
+// 	}
+// }
+
+// Keyframe descente des éléments (_fadIn.scss)
+@keyframes fadein {
+    0% {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(-225px);
+        opacity: 0;
+    }
+
+    75% {
+        transform: translateY(-175px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+// Keyframe montée des éléments (_fadIn.scss)
+@keyframes fadeout {
+    0% {
+        transform: translateY(600px);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(450px);
+        opacity: 0;
+    }
+
+    75% {
+        transform: translateY(175px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+// Rotation des fleurs sur 360° (_flowers.scss & _menu.scss)
+@keyframes spinAround {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// Mouvement du logo et des chats du menu (_video.scss & _menu.scss)
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+  
+	50% {
+		transform: translateY(-15px);
+	}
+  
+	100% {
+		transform: translateY(0);
+	}
+}

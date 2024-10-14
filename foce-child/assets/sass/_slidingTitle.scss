@@ -1,0 +1,17 @@
+// On masque ce qui déborde de lélément
+.slidingTitle {
+    overflow: hidden;
+}
+
+// Titres cachés
+.slidingTitle span {
+    display: inline-block;
+    padding-right: 15px;
+    transform: translateY(180px);
+    transition: transform 0.5s ease-out;
+}
+
+// Titres visibles
+.slidingTitle span.visible {
+    transform: translateY(0);
+}

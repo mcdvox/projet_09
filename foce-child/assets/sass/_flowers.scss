@@ -1,0 +1,22 @@
+// Selection des sections comprenant des fleurs à faire tourner
+.story__article::after,
+.story h2::after,
+#studio h2::before,
+#studio h2::after,
+.oscars::before,
+.oscars::after,
+ul::after {
+    animation: spinAround 20s linear infinite;
+}
+
+@media all and (max-width: 1039px) {
+    .story__article::after,
+    .story h2::after,
+    #studio h2::before,
+    #studio h2::after,
+    .oscars::before,
+    .oscars::after,
+    ul::after {
+        display: none;
+    }
+}

@@ -1,0 +1,224 @@
+// Style Global
+// Suppression des puces, des marges et espaces internes de la liste
+ul {
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+// Conteneur parent à 100%
+div {
+	width: 100%;
+}
+
+// Style du menu
+.site-title {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #FFD5A2;
+    max-width: 1440px;
+    padding-top: 25px;
+}
+
+// Position du menu Fixé en haut
+#site-navigation {
+	position: fixed;
+    max-width: 1440px;
+}
+
+// Menu Principal
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	height: 100%;
+	padding-left: 50px;
+}
+
+.main-navigation li {
+    position: relative;
+    font-size: 4em;
+}
+
+.main-navigation li .navbar_logo, .navStory, .navCharacters, .navPlace, .navStudio {
+    line-height: 200px;
+}
+
+.navbarLinks {
+    background-color: #FFF5E9; 
+    padding-top: 140px;
+    position: absolute;
+    top: 80px;
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+}
+
+.navbarLinks li:hover {
+    text-shadow: 0 0 14px #FF5C00;
+}
+
+.navbar_logo {
+    position: absolute;
+    width: 154px;
+    top: 37px;
+    left: 45%;
+}
+
+.navStudio {
+    margin-bottom: 2em;
+}
+
+.menu-toggle,
+.main-navigation.toggled ul {
+	line-height: 84px;
+    height: 115vh;
+	overflow: hidden
+}
+
+// Icône Burger
+.menu-toggle {
+    display:block;
+    position: absolute;
+    left: 89%;
+    top: 13px;
+    padding:0;
+    width:45px;
+    height:45px;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+}
+   
+.main-navigation .line {
+	height: 2px;
+	background-color: #000;
+	display: block;
+	margin: auto;
+	margin-block: -2px;
+	width: 2.5em;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.firstLine {
+	transform: translateY(-12px)
+}
+
+.thirdLine {
+	transform: translateY(12px)
+}
+
+.open-nav .secondLine {
+    width:0;
+    background: transparent;  
+}
+
+.open-nav .firstLine {
+    transform: rotate(45deg);
+}
+
+.open-nav .thirdLine {
+    transform: rotate(-45deg);
+}
+
+// Propriétés des images du menu
+// Logo du site
+.logo_menu {
+	position: relative;
+	top: -50px;
+}
+
+// Orchidées violette
+.orchid_menu {
+	position: absolute;
+	left: -60px;
+	top: 60px;
+	animation: spinAround 15s linear infinite;
+}
+
+// Chat Kawaneko
+.kawaneko_menu {
+	position: absolute;
+	top: 200px;
+	left: 265px;
+	rotate: -17.86deg;
+	animation: float 5s ease-in-out 0s infinite;
+}
+
+// Marguerite
+.marguerite_menu {
+	position: absolute;
+	top: 100px;
+	left: 1039px;
+	animation: spinAround 15s linear infinite;
+}
+
+// Fleur aléatoire orange et violette
+.random_flower_menu {
+	position: absolute;
+	top: 450px;
+	left: 1396px;
+	animation: spinAround 15s linear infinite;
+}
+
+// Fleurs orangées en bouquet
+.flower_menu {
+	position: absolute;
+	top: 575px;
+	left: 213px;
+	animation: spinAround 15s linear infinite;
+}
+
+// Chat Jaakuna
+.jaakuna_menu {
+	position: absolute;
+	top: 590px;
+	left: 1076px;
+	animation: float 5s ease-in-out 0s infinite;
+}
+
+// Chat Orenjiiro
+.orenjiiro_menu {
+	position: absolute;
+	width: 115px;
+	height: auto;
+	top: 900px;
+	left: 80px;
+	rotate: 0.5deg;
+	animation: float 5s ease-in-out 0s infinite;
+}
+  
+// Hibiscus du Footer
+.hibiscus {
+	position: absolute;
+	width: 626px;
+	height: 626px;
+	top: 890px;
+	left: 1150px;
+	animation: spinAround 15s linear infinite;
+}
+
+
+@media all and (max-width: 1039px) {
+    .logo_menu,
+	.orchid_menu,
+	.kawaneko_menu,
+	.marguerite_menu,
+	.random_flower_menu,
+	.flower_menu,
+	.jaakuna_menu,
+	.orenjiiro_menu,
+	.hibiscus {
+        display: none;
+    }
+}

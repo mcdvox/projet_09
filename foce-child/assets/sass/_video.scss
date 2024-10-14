@@ -1,0 +1,36 @@
+// On définit le conteneur principal avec une hauteur fixe et sans image de fond.
+.banner {
+    position: relative;
+    object-fit: contain;
+    background-image: none;
+    
+    //   On défini le conteneur parent afin de définir logo en sticky
+    &__background,
+    &__video {
+        position: absolute;
+        bottom: 0;
+        top: 80px;
+        min-width: 100%;
+    }
+
+    //   Logo sticky par rapport au conteneur parent
+    &__logo {
+        position: sticky;
+        top: 80px;
+        z-index: 2;
+        opacity: 1;
+        animation: float 8s 3s infinite ease-in-out;  
+    }
+}
+
+@media all and (max-width: 1039px) {
+    .banner {
+        &__video {
+            display: none;
+        }
+
+        &__logo {
+            position: absolute;
+        }
+    }
+}

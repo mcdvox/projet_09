@@ -1,0 +1,32 @@
+// FADE IN
+// Selecteurs concernés
+.banner__video,
+.banner__logo,
+#story,
+#characters,
+.site-title,
+#place,
+#studio,
+.oscars,
+.site-footer {
+    opacity: 1;
+    animation: fadeout 2s 300ms both;
+}
+
+// Video et Logo
+.banner {
+    position: relative;
+    background-image: none;
+    
+    &__video {
+        opacity: 1;
+        animation: fadein 2s 300ms both;
+    }
+}
+
+// Logo
+.logo {
+    position: absolute;
+    z-index: 2;
+    animation: fadeout 2s 300ms both;
+}

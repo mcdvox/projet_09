@@ -1,0 +1,38 @@
+// // PC et tablette
+// @media screen and (max-width: 768px) {
+//     // Reglages banner
+//     .banner {      
+//         min-height: unset;
+//         height: 400px;
+
+//         &__video {
+//             display: none;
+//         }
+
+//         &__logo {
+//             position: absolute;
+//             top: 0;
+//             width: 50% !important;
+//         }
+
+//         &__background {
+//             position: absolute;
+//             top: 0;
+//             width: auto;
+//         }
+
+//         img {
+//             margin-top: 0;
+
+//             &__logo {
+//                 width: unset;
+//                 width: 50%;
+//             }
+//         }
+//     }    
+    
+//     .swiper-slide img { 
+//         width: 50%;
+//         height: 50%;
+//     }
+// }   

@@ -1,0 +1,37 @@
+// Remplacement de l'image sans nuages
+.story #place {
+  position: relative;
+  background-image: url("../images/Studio_Koukaki-image_place.png");
+  margin-top: -100px;
+}
+
+// Repositionnement du titre h3
+.story #place h3 {
+  margin-left: -600px;
+}
+
+// Application des styles aux nuages
+#place .bigCloud,
+#place .littleCloud {
+  position: absolute;
+  filter: blur(15px);
+  transition: transform 1s linear;
+}
+
+// Positionnement du petit nuage
+ #place .littleCloud {
+  top: 250px;
+  right: 500px;
+}
+
+// positionnement du grand nuage
+#place .bigCloud {
+  top: 70px;
+  right: 90px;
+}
+
+@media all and (max-width: 920px) {
+  .story #place h3 {
+    margin-left:0;
+  }
+}
